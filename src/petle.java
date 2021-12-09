@@ -9,7 +9,7 @@ public class petle {
         }
 
     */
-
+/*
         int[] numbers = new int[] {1,3,5,6,8,15};
         int[] reversed = new int[numbers.length];
         int j=numbers.length-1;
@@ -22,6 +22,25 @@ public class petle {
 
         for(int i =0; i<reversed.length; i++){
             System.out.println(reversed[i]);
+        }
+
+ */
+
+        int[] numbers = new int[] {1,3,5,6,8,15};
+
+        int j=numbers.length-1;
+        int temp;
+
+        for(int i=0; i<(numbers.length/2);i++){
+
+            temp=numbers[i];
+            numbers[i]=numbers[j];
+            numbers[j]= temp;
+            j--;
+        }
+
+        for(int i =0; i<numbers.length; i++){
+            System.out.println(numbers[i]);
         }
 
     }
