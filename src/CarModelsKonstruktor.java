@@ -11,6 +11,11 @@ public class CarModelsKonstruktor {
 
         bmw.cena = bmw.nowy();
 
+        AutoKonstruktor ford = new AutoKonstruktor();
+
+        ford.marka = "Ford";
+        
+
 
 
 

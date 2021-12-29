@@ -10,6 +10,10 @@ public class AutoKonstruktor {
 
     int year = Calendar.getInstance().get(Calendar.YEAR);
 
+    public AutoKonstruktor() {
+
+    }
+
 
     public  AutoKonstruktor( String marka, String model, int przebieg, int rok, double cena){
 
