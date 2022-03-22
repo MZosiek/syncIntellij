@@ -25,7 +25,7 @@ public class ScannerClass {
 
     }
 
-    public static int monthNr()  {
+    public static int monthNr() throws NoValidDataProvided {
 
         System.out.println("podaj nazwe miesiąca");
 
@@ -35,15 +35,11 @@ public class ScannerClass {
         if(month < 12){
             return month;
         }
-            try {
-               throw new NoValidDataProvided("test");
-            } catch (NoValidDataProvided noValidDataProvided) {
-                System.out.println("błąd");
-
+          throw new NoValidDataProvided("test");
 
             }
-        return month;
+
     }
 
 
-}
+
