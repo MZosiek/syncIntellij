@@ -20,6 +20,11 @@ public class StudentTest {
        // itGuy.sayHello("Marcin");
         sayHello("Krzysztof",itGuy);
 
+
+        Student noStudent = (name) -> System.out.println("I am not a student yet");
+
+        sayHello("Adam",noStudent);
+
     }
 
     public static void sayHello(String name, Student student){
